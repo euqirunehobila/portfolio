@@ -1,0 +1,79 @@
+:root {
+    
+    --primary-color: #6540a5;
+    --secondary-color: #161616;
+    --tertiary-color: #E7E247;
+    --quaternary-color: #687D58;
+    --quinary-color: #DD9787;
+}
+.footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    z-index: 5;
+    width: 100%;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    height: 100px;
+    position: absolute;
+    transform: translateY(2rem);
+}
+
+.footer p {
+    overflow: hidden;
+    color: var(--tertiary-color);
+    font-weight: 1000;
+}
+
+.footer-sci a {
+    color: var(--tertiary-color);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid .15rem var(--tertiary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 35px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.footer-sci a::before {
+    background: var(--tertiary-color);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.footer-sci a:hover::before {
+    width: 100%;
+}
+
+.footer-sci a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-text span {
+    font-family: body;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.footer-text span:hover {
+    color: orange;
+    cursor: pointer;
+}
